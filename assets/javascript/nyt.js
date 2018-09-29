@@ -20,17 +20,21 @@ function AJAXrequest() {
       url: url,
       method: 'GET',
     }).done(function(result) {
-      console.log(result);
+    //   console.log(result);
     }).fail(function(err) {
       throw err;
-    });
+    }).then(function(response) { 
+        console.log(response.copyright)
 
+    });
+    
+
+    // var searchTerm = $("#search-term").val().trim();
 };
 
-    // var searchTerm = $("#search-term").text();
 
 
 
-    $(document).on("click", "#run-search", AJAXrequest);
+    // $(document).on("click", "#run-search", AJAXrequest);
 
 
