@@ -46,29 +46,29 @@
               <div class="form-group">
                 <label for="pwd">Number of Records to Retrieve:</label>
                 <select class="form-control" id="num-records-select">
-							<option value="1">1</option>
+							<option class="selection" value="1">1</option>
               <!-- Setting 5 as default -->
               
-							<option value="5" selected>5</option>
-							<option value="10">10</option>
+							<option class="selection" value="5">5</option>
+							<option class="selection" value="10">10</option>
 						</select>
               </div>
 
               <!-- Start Year -->
               <div class="form-group">
-                <label for="start-year">Start Year (Optional) YYYYMMDD Format:</label>
+                <label for="start-year">Start Year YYYYMMDD Format:</label>
                 <input type="text" class="form-control" id="start-year">
               </div>
 
               <!-- End Year -->
               <div class="form-group">
-                <label for="end-year">End Year (Optional) YYYYMMDD Format:</label>
+                <label for="end-year">End Year YYYYMMDD Format:</label>
                 <input type="text" class="form-control" id="end-year">
               </div>
 
               <!-- Submit button add Font Awesome -->
-              <button type="button" class="btn btn-default" id="run-search"><i class="fa fa-search"></i> Search</button>
-              <button type="button" class="btn btn-default" id="clear-all"><i class="fa fa-trash"></i> Clear Results</button>
+              <button type="button" class="btn btn-default" value="1" id="run-search"><i class="fa fa-search"></i> Search</button>
+              <button type="button" class="btn btn-default" value="2" id="clear-all"><i class="fa fa-trash"></i> Clear Results</button>
 
             </form>
           </div>
