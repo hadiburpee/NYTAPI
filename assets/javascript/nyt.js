@@ -1,13 +1,13 @@
 // api key - 3c399272ff9f49cea79bf107353b25b0
 
-// $("#run-search").on("click", function() {
 
 
+function AJAXrequest() {
     var url = "https://api.nytimes.com/svc/search/v2/articlesearch.json";
     url += '?' + $.param({
       'api-key': "3c399272ff9f49cea79bf107353b25b0",
       // Search query term. Search is performed on the article body, headline and byline.
-      'q': "Cheese",
+      'q': searchTerm,
       // "Date Format: YYYYMMDD
       // Restricts responses to results with publication dates of the date specified or later."
       'begin_date': "20180303",
@@ -25,18 +25,12 @@
       throw err;
     });
 
+};
+
+    // var searchTerm = $("#search-term").text();
 
 
 
+    $(document).on("click", "#run-search", AJAXrequest);
 
 
-
-
-
-
-
-
-
-
-
-// });
