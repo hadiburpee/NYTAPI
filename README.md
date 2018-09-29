@@ -1,4 +1,2 @@
 # NYTAPI
 
-API Key
-2ebee7e9cb0c4366a5122187353c1aad
